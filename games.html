@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>CUI WAH</title>
+  <style>
+     body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(250, 249, 249);
+    }
+
+    .header-section {
+      height: 600px;
+      /* Adjust height as needed */
+      position: relative;
+      overflow: hidden;
+      /* Ensures no overflow from the video */
+    }
+
+    .header-section video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      /* Places the video behind other content */
+    }
+
+    .navbar {
+      background: rgb(58, 68, 159);
+      /* Semi-transparent background */
+      opacity: 0.5;
+    }
+
+    .navbar a {
+      color: aliceblue;
+    }
+
+    .navbar.scrolled {
+      background: rgba(34, 33, 33, 0.9);
+      /* Slightly more opaque on scroll */
+    }
+    .text-warning {
+      color: #ffc107 !important;
+    }
+
+    .navbar .nav-item .nav-link {
+      text-decoration: bold;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .navbar .nav-item .nav-link:hover {
+      font-size: 18px;
+      background-color: #ffc107;
+      color: white;
+      border-radius: 100px;
+      opacity: .9;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      color: aliceblue;
+      background: #ffc107;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning" href="index.html">
+            <img src="asset/img/logo com.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">CUIW <span
+              class="text-light">Sports</span>
+          </a>
+          <button class="navbar-toggler bg-warning text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+             
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Events</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="games.html" target="_blank">Indoor Games</a></li>
+                  <li><a class="dropdown-item " href="games.html" target="_blank">Outdoor Games</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" role="button" href="#contact">Contact</a>
+              </li>
+             
+            </ul>
+            <li>  <a  href="index.html" class="btn btn-success "  >
+                View Schedule </a>
+              </li>>
+            <!-- <button class="btn btn-outline-primary bg-primary text-light" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#demo">Sign In</button> -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
+      <marquee class="fw-bold bg-opacity-50 bg-light" style="color: #800080;" behavior="scroll" direction="right">
+        2024 Spring Student of <kbd class="text-bg-primary text-light">COMSATS WAH</kbd> Has Arrived Starting From 7th
+        October Onwards
+      </marquee>
+  <div class="container mt-3">
+    <div class="bg-transparent text-white p-3" style="position: relative; width: 300px; height: 300px; margin: auto;">
+        <img class="animate__animated animate__rotateInDownLeft" src="asset/event/rackets1-removebg-preview.png" alt="" style="position: absolute; top: 0; left: 0; z-index: 1;">
+        <img class="animate__animated animate__rotateInDownRight" src="asset/event/right_racker.png" alt="" style="position: absolute; top: 0; left: 0; z-index: 2;">
+    </div>
+  </div>
+  <div class="container mt-4">
+    <h1 class="fs-bold text-bg-success rounded-4 text-center" >Outdoor Games</h1>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="asset/img/558a9e0a-533b-468a-816c-d0c3d238da3e.jpg" class="card-img-top" alt="Cricket Tournament"/>
+            <div class="card-body">
+                <h5 class="card-title">Cricket Tournament Boys</h5>
+                <p class="card-text">Showcase your skills and get selected for the team!</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCricket">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cricket Modal -->
+    <div class="modal fade" id="modalCricket" tabindex="-1" aria-labelledby="modalLabelCricket" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelCricket">Cricket Tournament</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Join us for an exciting cricket tournament where you can showcase your skills and get selected for the team!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameCricket" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameCricket" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailCricket" class="form-label">Student Registration No:</label>
+                            <input type="text" class="form-control" id="emailCricket" placeholder="Enter Registration" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactCricket" class="form-label">Contact no</label>
+                            <input type="tel" class="form-control" id="contactCricket" placeholder="Enter contact" name="contact">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hockey Card -->
+    <div class="col-lg-4 col-md-6 mb-3">
+        <div class="card">
+            <img src="asset/event/hocketga,e.jpg" class="card-img-top" alt="Hockey Tournament"/>
+            <div class="card-body">
+                <h5 class="card-title">Hockey Tournament</h5>
+                <p class="card-text">Join the excitement and showcase your skills!</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHockey">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hockey Modal -->
+    <div class="modal fade" id="modalHockey" tabindex="-1" aria-labelledby="modalLabelHockey" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelHockey">Hockey Tournament</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Participate in the thrilling hockey tournament and prove your mettle on the field!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameHockey" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameHockey" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailHockey" class="form-label">Student Registration No:</label>
+                            <input type="text" class="form-control" id="emailHockey" placeholder="Enter Registration" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactHockey" class="form-label">Contact no</label>
+                            <input type="tel" class="form-control" id="contactHockey" placeholder="Enter contact" name="contact">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Football Card -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="asset/event/footbalgame.jpg" class="card-img-top" alt="Football Tournament"/>
+            <div class="card-body">
+                <h5 class="card-title">Football Tournament</h5>
+                <p class="card-text">Show your football skills and compete for the trophy!</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFootball">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Football Modal -->
+    <div class="modal fade" id="modalFootball" tabindex="-1" aria-labelledby="modalLabelFootball" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelFootball">Football Tournament</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Show your football skills and compete for the trophy!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameFootball" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameFootball" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailFootball" class="form-label">Student Registration No:</label>
+                            <input type="text" class="form-control" id="emailFootball" placeholder="Enter Registration" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactFootball" class="form-label">Contact no</label>
+                            <input type="tel" class="form-control" id="contactFootball" placeholder="Enter contact" name="contact">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+    <!-- Volleyball Card -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="asset/event/voly.jpeg" class="card-img-top" alt="Volleyball Tournament"/>
+            <div class="card-body">
+                <h5 class="card-title">Volleyball Tournament</h5>
+                <p class="card-text">Join us for an exciting volleyball tournament!</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVolleyball">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Volleyball Modal -->
+    <div class="modal fade" id="modalVolleyball" tabindex="-1" aria-labelledby="modalLabelVolleyball" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelVolleyball">Volleyball Tournament</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Join us for an exciting volleyball tournament!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameVolleyball" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameVolleyball" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailVolleyball" class="form-label">Student Registration No:</label>
+                            <input type="text" class="form-control" id="emailTableTennis" placeholder="Enter Registration" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactTableTennis" class="form-label">Contact no</label>
+                            <input type="tel" class="form-control" id="contactTableTennis" placeholder="Enter contact" name="contact">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+       <!-- Kedi Kedi Card -->
+       <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="asset/event/kedi.jpeg" class="card-img-top" alt="Kedi Kedi Game"/>
+            <div class="card-body">
+                <h5 class="card-title">Kedi Kedi Game</h5>
+                <p class="card-text">Join us for a fun-filled Kedi Kedi game!</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKediKedi">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kedi Kedi Modal -->
+    <div class="modal fade" id="modalKediKedi" tabindex="-1" aria-labelledby="modalLabelKediKedi" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelKediKedi">Kedi Kedi Game</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Join us for a fun-filled Kedi Kedi game!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameKediKedi" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameKediKedi" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailKediKedi" class="form-label">Student Registration No:</label>
+                            <input type="text" class="form-control" id="emailKediKedi" placeholder="Enter Registration" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactKediKedi" class="form-label">Contact no</label>
+                            <input type="tel" class="form-control" id="contactKediKedi" placeholder="Enter contact" name="contact">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="fs-bold text-bg-warning rounded-4 text-center text-light" >Indoor Games</h1>
+     <!-- Coding Competition Card -->
+     <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+          <img src="asset/event/coding.png" class="card-img-top" alt="Coding Competition"/>
+          <div class="card-body">
+              <h5 class="card-title">Coding Competition</h5>
+              <p class="card-text">Challenge your coding skills in our Coding Competition!</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCoding">Register</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- Coding Competition Modal -->
+  <div class="modal fade" id="modalCoding" tabindex="-1" aria-labelledby="modalLabelCoding" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabelCoding">Coding Competition</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Challenge your coding skills in our Coding Competition!</p>
+                  <form>
+                      <div class="mb-3">
+                          <label for="nameCoding" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="nameCoding" placeholder="Enter Name" name="name">
+                      </div>
+                      <div class="mb-3">
+                          <label for="emailCoding" class="form-label">Student Registration No:</label>
+                          <input type="text" class="form-control" id="emailCoding" placeholder="Enter Registration" name="email">
+                      </div>
+                      <div class="mb-3">
+                          <label for="contactCoding" class="form-label">Contact no</label>
+                          <input type="tel" class="form-control" id="contactCoding" placeholder="Enter contact" name="contact">
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+        <!-- E-Gaming Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="asset/event/egame.jpg" class="card-img-top" alt="E-Gaming"/>
+                <div class="card-body">
+                    <h5 class="card-title">E-Gaming Competition</h5>
+                    <p class="card-text">Compete in our thrilling E-Gaming Competition!</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEGaming">Register</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- E-Gaming Modal -->
+        <div class="modal fade" id="modalEGaming" tabindex="-1" aria-labelledby="modalLabelEGaming" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabelEGaming">E-Gaming Competition</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Compete in our thrilling E-Gaming Competition!</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nameEGaming" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="nameEGaming" placeholder="Enter Name" name="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailEGaming" class="form-label">Student Registration No:</label>
+                                <input type="text" class="form-control" id="emailEGaming" placeholder="Enter Registration" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEGaming" class="form-label">Contact no</label>
+                                <input type="tel" class="form-control" id="contactEGaming" placeholder="Enter contact" name="contact">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Badminton Boys Card -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+      <img src="asset/event/badminton.jpeg" class="card-img-top" alt="Badminton Boys Tournament"/>
+      <div class="card-body">
+          <h5 class="card-title">Badminton Tournament Boys</h5>
+          <p class="card-text">Compete in our thrilling badminton tournament!</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBadmintonBoys">Register</button>
+      </div>
+  </div>
+</div>
+<!-- Badminton Boys Modal -->
+<div class="modal fade" id="modalBadmintonBoys" tabindex="-1" aria-labelledby="modalLabelBadmintonBoys" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelBadmintonBoys">Badminton Tournament Boys</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Compete in our thrilling badminton tournament!</p>
+              <form>
+                  <div class="mb-3">
+                      <label for="nameBadmintonBoys" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="nameBadmintonBoys" placeholder="Enter Name" name="name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="emailBadmintonBoys" class="form-label">Student Registration No:</label>
+                      <input type="text" class="form-control" id="emailBadmintonBoys" placeholder="Enter Registration" name="email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="contactBadmintonBoys" class="form-label">Contact no</label>
+                      <input type="tel" class="form-control" id="contactBadmintonBoys" placeholder="Enter contact" name="contact">
+                  </div>
+                  <div class="form-check mb-3">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                      </label>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Badminton Girls Card -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+      <img src="asset/event/girlsbad,min.jpeg" class="card-img-top" alt="Badminton Girls Tournament"/>
+      <div class="card-body">
+          <h5 class="card-title">Badminton Tournament Girls</h5>
+          <p class="card-text">Join the competition and show your skills!</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBadmintonGirls">Register</button>
+      </div>
+  </div>
+</div>
+
+<!-- Badminton Girls Modal -->
+<div class="modal fade" id="modalBadmintonGirls" tabindex="-1" aria-labelledby="modalLabelBadmintonGirls" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelBadmintonGirls">Badminton Tournament Girls</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Join the competition and show your skills!</p>
+              <form>
+                  <div class="mb-3">
+                      <label for="nameBadmintonGirls" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="nameBadmintonGirls" placeholder="Enter Name" name="name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="emailBadmintonGirls" class="form-label">Student Registration No:</label>
+                      <input type="text" class="form-control" id="emailBadmintonGirls" placeholder="Enter Registration" name="email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="contactBadmintonGirls" class="form-label">Contact no</label>
+                      <input type="tel" class="form-control" id="contactBadmintonGirls" placeholder="Enter contact" name="contact">
+                  </div>
+                  <div class="form-check mb-3">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                      </label>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Table Tennis Card -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+      <img src="asset/event/tennis.jpeg" class="card-img-top" alt="Table Tennis Tournament"/>
+      <div class="card-body">
+          <h5 class="card-title">Table Tennis Tournament</h5>
+          <p class="card-text">Join our fast-paced table tennis tournament!</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTableTennis">Register</button>
+      </div>
+  </div>
+</div>
+
+<!-- Table Tennis Modal -->
+<div class="modal fade" id="modalTableTennis" tabindex="-1" aria-labelledby="modalLabelTableTennis" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelTableTennis">Table Tennis Tournament</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Join our fast-paced table tennis tournament!</p>
+              <form>
+                  <div class="mb-3">
+                      <label for="nameTableTennis" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="nameTableTennis" placeholder="Enter Name" name="name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="emailTableTennis" class="form-label">Student Registration No:</label>
+                      <input type="text" class="form-control" id="emailTableTennis" placeholder="Enter Registration" name="email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="contactTableTennis" class="form-label">Contact no</label>
+                      <input type="tel" class="form-control" id="contactTableTennis" placeholder="Enter contact" name="contact">
+                  </div>
+                  <div class="form-check mb-3">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                      </label>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <!-- Wooden Jenga Card -->
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+            <img src="asset/event/woodbridge.jpeg" class="card-img-top" alt="Wooden Jenga Game"/>
+            <div class="card-body">
+                <h5 class="card-title">Wooden Jenga Game</h5>
+                <p class="card-text">Test your skills in the Wooden Jenga challenge!</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWoodenJenga">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wooden Jenga Modal -->
+    <div class="modal fade" id="modalWoodenJenga" tabindex="-1" aria-labelledby="modalLabelWoodenJenga" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelWoodenJenga">Wooden Jenga Game</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Test your skills in the Wooden Jenga challenge!</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameWoodenJenga" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameWoodenJenga" placeholder="Enter Name" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailWoodenJenga" class="form-label">Student Registration No:</label>
+                            <input type="text" class="form-control" id="emailWoodenJenga" placeholder="Enter Registration" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactWoodenJenga" class="form-label">Contact no</label>
+                            <input type="tel" class="form-control" id="contactWoodenJenga" placeholder="Enter contact" name="contact">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light" href="#">Register</a></button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+   
+    
+
+</div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Repeat this structure for modals 3 to 12 -->
+<ul class="pagination pagination-lg">
+    <li class="page-item"><a class="page-link" href="game2.html">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="games.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="game2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="game2.html">Next</a></li>
+  </ul>
+  <section id="contact" class="container mt-5">
+    <h3>Contact Us</h3>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <footer class="py-5 mt-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <i class="fa-brands fa-facebook ms-3"><a href="#" class="link-body-emphasis"></a></i>
+          <i class="fa-brands fa-twitter ms-3"><a href="#" class="link-body-emphasis"></a></i>
+          <i class="fa-brands fa-instagram ms-3"><a href="#" class="link-body-emphasis"></a></i>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

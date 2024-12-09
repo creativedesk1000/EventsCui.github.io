@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>CUI WAH</title>
+  <style>
+    body {
+     margin: 0;
+     padding: 0;
+     background-color: rgb(250, 249, 249);
+   }
+
+   .header-section {
+     height: 600px;
+     /* Adjust height as needed */
+     position: relative;
+     overflow: hidden;
+     /* Ensures no overflow from the video */
+   }
+
+   .header-section video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+     /* Places the video behind other content */
+   }
+
+   .navbar {
+     background: rgb(58, 68, 159);
+     /* Semi-transparent background */
+     opacity: 0.5;
+   }
+
+   .navbar a {
+     color: aliceblue;
+   }
+
+   .navbar.scrolled {
+     background: rgba(34, 33, 33, 0.9);
+     /* Slightly more opaque on scroll */
+   }
+   .text-warning {
+     color: #ffc107 !important;
+   }
+
+   .navbar .nav-item .nav-link {
+     text-decoration: bold;
+     font-weight: 600;
+     font-size: 16px;
+   }
+
+   .navbar .nav-item .nav-link:hover {
+     font-size: 18px;
+     background-color: #ffc107;
+     color: white;
+     border-radius: 100px;
+     opacity: .9;
+   }
+
+   .dropdown:hover .dropdown-menu {
+     display: block;
+     color: aliceblue;
+     background: #ffc107;
+   }
+
+   .card-img-top {
+     height: 200px;
+     object-fit: cover;
+   }
+ </style>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg">
+       <div class="container-fluid">
+         <a class="navbar-brand text-warning" href="index.html">
+           <img src="asset/img/logo com.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">CUIW <span
+             class="text-light">Sports</span>
+         </a>
+         <button class="navbar-toggler bg-warning text-light" type="button" data-bs-toggle="collapse"
+           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+           aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#about">About</a>
+             </li>
+            
+            
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Events</a>
+               <ul class="dropdown-menu">
+                 <li><a class="dropdown-item " href="games.html" target="_blank">Indoor Games</a></li>
+                 <li><a class="dropdown-item " href="games.html" target="_blank">Outdoor Games</a></li>
+               </ul>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" role="button" href="#contact">Contact</a>
+             </li>
+            
+           </ul>
+           <li>  <a  href="index.html" class="btn btn-success "  >
+            View Schedule </a>
+          </li>>
+           <button class="btn btn-outline-primary bg-primary text-light" type="button" data-bs-toggle="offcanvas"
+             data-bs-target="#demo">Sign In</button>
+           <form class="d-flex" role="search">
+             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success" type="submit">Search</button>
+           </form>
+         </div>
+       </div>
+     </nav>
+ 
+     <marquee class="fw-bold bg-opacity-50 bg-light" style="color: #800080;" behavior="scroll" direction="right">
+       2024 Spring Student of <kbd class="text-bg-primary text-light">COMSATS WAH</kbd> Has Arrived Starting From 7th
+       October Onwards
+     </marquee>
+  <div class="container mt-3">
+    <div class="bg-transparent text-white p-3" style="position: relative; width: 300px; height: 300px; margin: auto;">
+        <img class="animate__animated animate__rotateInDownLeft" src="asset/event/rackets1-removebg-preview.png" alt="" style="position: absolute; top: 0; left: 0; z-index: 1;">
+        <img class="animate__animated animate__rotateInDownRight" src="asset/event/right_racker.png" alt="" style="position: absolute; top: 0; left: 0; z-index: 2;">
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Card 1 -->
+      <h1 class="fs-bold text-bg-success rounded-4 text-center">Outdoor Games</h1>
+
+
+      <!-- Mini Olympics Card -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="asset/event/olym.jpeg" class="card-img-top" alt="Mini Olympics" />
+          <div class="card-body">
+            <h5 class="card-title">Mini Olympics</h5>
+            <p class="card-text">Participate in various athletic events in our Mini Olympics!</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#modalMiniOlympics">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini Olympics Modal -->
+      <div class="modal fade" id="modalMiniOlympics" tabindex="-1" aria-labelledby="modalLabelMiniOlympics"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelMiniOlympics">Mini Olympics</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Participate in various athletic events in our Mini Olympics!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="nameMiniOlympics" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameMiniOlympics" placeholder="Enter Name" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="emailMiniOlympics" class="form-label">Student Registration No:</label>
+                  <input type="text" class="form-control" id="emailMiniOlympics" placeholder="Enter Registration"
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="contactMiniOlympics" class="form-label">Contact no</label>
+                  <input type="tel" class="form-control" id="contactMiniOlympics" placeholder="Enter contact"
+                    name="contact">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                  href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Spoon Race Card -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="asset/event/spoonrace.jpeg" class="card-img-top" alt="Spoon Race" />
+          <div class="card-body">
+            <h5 class="card-title">Spoon Race</h5>
+            <p class="card-text">Participate in the fun Spoon Race!</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#modalSpoonRace">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spoon Race Modal -->
+      <div class="modal fade" id="modalSpoonRace" tabindex="-1" aria-labelledby="modalLabelSpoonRace"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelSpoonRace">Spoon Race</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Participate in the fun Spoon Race!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="nameSpoonRace" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameSpoonRace" placeholder="Enter Name" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="emailSpoonRace" class="form-label">Student Registration No:</label>
+                  <input type="text" class="form-control" id="emailSpoonRace" placeholder="Enter Registration"
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="contactSpoonRace" class="form-label">Contact no</label>
+                  <input type="tel" class="form-control" id="contactSpoonRace" placeholder="Enter contact"
+                    name="contact">
+                </div>
+                <div class="form-check mb-3">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                  href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basketball Card -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="asset/event/volleyball.jpeg" class="card-img-top" alt="Basketball" />
+          <div class="card-body">
+            <h5 class="card-title">Basketball Tournament</h5>
+            <p class="card-text">Join the excitement in our Basketball Tournament!</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#modalBasketball">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basketball Modal -->
+      <div class="modal fade" id="modalBasketball" tabindex="-1" aria-labelledby="modalLabelBasketball"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelBasketball">Basketball Tournament</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Join the excitement in our Basketball Tournament!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="nameBasketball" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameBasketball" placeholder="Enter Name" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="emailBasketball" class="form-label">Student Registration No:</label>
+                  <input type="text" class="form-control" id="emailBasketball" placeholder="Enter Registration"
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="contactBasketball" class="form-label">Contact no</label>
+                  <input type="tel" class="form-control" id="contactBasketball" placeholder="Enter contact"
+                    name="contact">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                  href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Fitness Follies Card -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="asset/event/fitnes.jpg" class="card-img-top" alt="Fitness Follies" />
+          <div class="card-body">
+            <h5 class="card-title">Fitness Follies</h5>
+            <p class="card-text">Join us for a fun-filled Fitness Follies event!</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#modalFitnessFollies">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fitness Follies Modal -->
+      <div class="modal fade" id="modalFitnessFollies" tabindex="-1" aria-labelledby="modalLabelFitnessFollies"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelFitnessFollies">Fitness Follies</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Join us for a fun-filled Fitness Follies event!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="nameFitnessFollies" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameFitnessFollies" placeholder="Enter Name" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="emailFitnessFollies" class="form-label">Student Registration No:</label>
+                  <input type="text" class="form-control" id="emailFitnessFollies" placeholder="Enter Registration"
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="contactFitnessFollies" class="form-label">Contact no</label>
+                  <input type="tel" class="form-control" id="contactFitnessFollies" placeholder="Enter contact"
+                    name="contact">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                  href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 100m Race Card -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="asset/event/race.jpg" class="card-img-top" alt="100m Race" />
+          <div class="card-body">
+            <h5 class="card-title">100m Race: Bolt of COMSATS</h5>
+            <p class="card-text">Test your speed in the thrilling 100m Race!</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#modal100mRace">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 100m Race Modal -->
+      <div class="modal fade" id="modal100mRace" tabindex="-1" aria-labelledby="modalLabel100mRace" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel100mRace">100m Race: Bolt of COMSATS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Test your speed in the thrilling 100m Race!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="name100mRace" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name100mRace" placeholder="Enter Name" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="email100mRace" class="form-label">Student Registration No:</label>
+                  <input type="text" class="form-control" id="email100mRace" placeholder="Enter Registration"
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="contact100mRace" class="form-label">Contact no</label>
+                  <input type="tel" class="form-control" id="contact100mRace" placeholder="Enter contact"
+                    name="contact">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                  href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="fs-bold text-bg-warning rounded-4 text-center text-light">Indoor Games</h1>
+
+
+      <!-- Chess Card -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="asset/event/chess.jpg" class="card-img-top" alt="Chess" />
+          <div class="card-body">
+            <h5 class="card-title">Chess Tournament</h5>
+            <p class="card-text">Showcase your strategic skills in our Chess Tournament!</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#modalChess">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chess Modal -->
+      <div class="modal fade" id="modalChess" tabindex="-1" aria-labelledby="modalLabelChess" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelChess">Chess Tournament</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Showcase your strategic skills in our Chess Tournament!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="nameChess" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameChess" placeholder="Enter Name" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="emailChess" class="form-label">Student Registration No:</label>
+                  <input type="text" class="form-control" id="emailChess" placeholder="Enter Registration" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="contactChess" class="form-label">Contact no</label>
+                  <input type="tel" class="form-control" id="contactChess" placeholder="Enter contact" name="contact">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                  href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Speak & Shine Card -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="asset/event/speak.jpg" class="card-img-top" alt="Speak & Shine" />
+          <div class="card-body">
+            <h5 class="card-title">Speak & Shine</h5>
+            <p class="card-text">Showcase your speaking skills!</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#modalSpeakShine">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speak & Shine Modal -->
+      <div class="modal fade" id="modalSpeakShine" tabindex="-1" aria-labelledby="modalLabelSpeakShine"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelSpeakShine">Speak & Shine</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Showcase your speaking skills!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="nameSpeakShine" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameSpeakShine" placeholder="Enter Name" name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="emailSpeakShine" class="form-label">Student Registration No:</label>
+                  <input type="text" class="form-control" id="emailSpeakShine" placeholder="Enter Registration"
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="contactSpeakShine" class="form-label">Contact no</label>
+                  <input type="tel" class="form-control" id="contactSpeakShine" placeholder="Enter contact"
+                    name="contact">
+                </div>
+                <div class="form-check mb-3">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                  href="#">Register</a></button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Escape Room Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="asset/event/escape.jpg" class="card-img-top" alt="Escape Room" />
+            <div class="card-body">
+              <h5 class="card-title">Escape Room Challenge</h5>
+              <p class="card-text">Can you escape the room in time?</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modalEscapeRoom">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Escape Room Modal -->
+        <div class="modal fade" id="modalEscapeRoom" tabindex="-1" aria-labelledby="modalLabelEscapeRoom"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabelEscapeRoom">Escape Room Challenge</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Can you escape the room in time?</p>
+                <form>
+                  <div class="mb-3">
+                    <label for="nameEscapeRoom" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nameEscapeRoom" placeholder="Enter Name" name="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="emailEscapeRoom" class="form-label">Student Registration No:</label>
+                    <input type="text" class="form-control" id="emailEscapeRoom" placeholder="Enter Registration"
+                      name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactEscapeRoom" class="form-label">Contact no</label>
+                    <input type="tel" class="form-control" id="contactEscapeRoom" placeholder="Enter contact"
+                      name="contact">
+                  </div>
+                  <div class="form-check mb-3">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                    href="#">Register</a></button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Squid Game Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="asset/event/squid.jpg" class="card-img-top" alt="Squid Game" />
+            <div class="card-body">
+              <h5 class="card-title">Squid Game Challenge</h5>
+              <p class="card-text">Test your skills in the Squid Game challenge!</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modalSquidGame">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Squid Game Modal -->
+        <div class="modal fade" id="modalSquidGame" tabindex="-1" aria-labelledby="modalLabelSquidGame"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabelSquidGame">Squid Game Challenge</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Test your skills in the Squid Game challenge!</p>
+                <form>
+                  <div class="mb-3">
+                    <label for="nameSquidGame" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nameSquidGame" placeholder="Enter Name" name="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="emailSquidGame" class="form-label">Student Registration No:</label>
+                    <input type="text" class="form-control" id="emailSquidGame" placeholder="Enter Registration"
+                      name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactSquidGame" class="form-label">Contact no</label>
+                    <input type="tel" class="form-control" id="contactSquidGame" placeholder="Enter contact"
+                      name="contact">
+                  </div>
+                  <div class="form-check mb-3">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn bg-primary" data-bs-dismiss="modal"><a class="text-light"
+                    href="#">Register</a></button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <!-- Repeat this structure for modals 3 to 12 -->
+      <ul class="pagination pagination-lg">
+        <li class="page-item"><a class="page-link" href="games.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="games.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="game2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="games.html">Next</a></li>
+      </ul>
+      <section id="contact" class="container mt-5">
+        <h3>Contact Us</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+
+      <footer class="py-5 mt-5 bg-light">
+        <div class="container">
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <i class="fa-brands fa-facebook ms-3"><a href="#" class="link-body-emphasis"></a></i>
+              <i class="fa-brands fa-twitter ms-3"><a href="#" class="link-body-emphasis"></a></i>
+              <i class="fa-brands fa-instagram ms-3"><a href="#" class="link-body-emphasis"></a></i>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>
